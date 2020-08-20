@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="jumbotron">
+        <h1 class="text-center"> <i class="fa fa-umbrella"></i> Weather API Forecast Search </h1>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header"><strong>
+                        Search for a City: </strong></br>
+                        <form id= "searchArea" class="search">
+                            <input type="text" placeholder="Enter Destination" id="destSearch">
+                            <button onclick="addDestination()"><i class="fa fa-search"></i></button>
+                            <button onclick="clearList()"><i class="fa fa-trash"></i></button>
+                        </form>
+                    </div>
+                    <div id = "resultsArea" class = "list-group">
+                </div>
+            </div>
+        </div>
+            <div class="col-md-8" id="forecasts">
+                <div class = "row">
+                    <div class="col-md-12">
+                        <section id="currentForecast"></section>
+                        <p id="currentUV"></p>
+                    </div>
+                </div>
+                <div class="row" id="forecastCards">
+                    <section id="weeklyForecast"></section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

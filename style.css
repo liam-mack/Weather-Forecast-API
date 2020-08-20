@@ -1,0 +1,36 @@
+body{
+    background-color: navy;
+}
+
+.container{
+    background-color: white;
+    border-radius: 5px;
+    width: 80%;
+}
+
+.list-group-item-action{
+    cursor: pointer;
+    font-size: 1em
+}
+
+.lowUV{
+    background-color: green;
+    border-radius: 10px;
+}
+
+.modUV{
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+.highUV{
+    background-color: red;
+    border-radius: 10px;
+}
+
+.futureCards{
+    background-color: skyblue;
+    color: white;
+    margin-left: 1em
+
+}
