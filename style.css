@@ -1,5 +1,7 @@
 body{
-    background-color: navy;
+    background: url("./Images/Weather.png") no-repeat center ;
+    background-size:100vh;
+    /* margin-top: 20rem; */
 }
 
 .container{
